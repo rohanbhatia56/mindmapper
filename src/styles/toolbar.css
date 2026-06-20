@@ -1,0 +1,57 @@
+.toolbar-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover:not(:disabled) {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-btn:nth-child(3n + 1) {
+  background: #27ae60;
+}
+
+.toolbar-btn:nth-child(3n + 1):hover:not(:disabled) {
+  background: #229954;
+}
+
+.toolbar-section:nth-child(4) .toolbar-btn:nth-child(1),
+.toolbar-section:nth-child(4) .toolbar-btn:nth-child(2) {
+  background: #e74c3c;
+}
+
+.toolbar-section:nth-child(4) .toolbar-btn:nth-child(1):hover:not(:disabled),
+.toolbar-section:nth-child(4) .toolbar-btn:nth-child(2):hover:not(:disabled) {
+  background: #c0392b;
+}
+
+.toolbar-section:nth-child(5) .toolbar-btn {
+  background: #9b59b6;
+}
+
+.toolbar-section:nth-child(5) .toolbar-btn:hover:not(:disabled) {
+  background: #8e44ad;
+}

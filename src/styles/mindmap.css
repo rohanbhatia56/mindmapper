@@ -1,0 +1,95 @@
+.mindmap-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* React Flow customization */
+.rf-viewport {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.rf-background {
+  background-color: transparent !important;
+}
+
+.react-flow__background {
+  background: transparent;
+}
+
+.react-flow__minimap-mask {
+  fill: #667eea;
+  opacity: 0.1;
+}
+
+/* Edge styling */
+.react-flow__edge path {
+  stroke: #2c3e50;
+  stroke-width: 2;
+}
+
+.react-flow__edge.animated path {
+  animation: dash 0.5s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 8;
+  }
+}
+
+/* Handle styling */
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #2c3e50;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.react-flow__handle-top {
+  top: -4px;
+}
+
+.react-flow__handle-bottom {
+  bottom: -4px;
+}
+
+/* Controls */
+.react-flow__controls {
+  background: rgba(44, 62, 80, 0.8);
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.react-flow__controls button {
+  background: #3498db;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.react-flow__controls button:hover {
+  background: #2980b9;
+}
+
+.react-flow__controls button svg {
+  fill: white;
+}
+
+/* Mini map */
+.react-flow__minimap {
+  background: rgba(44, 62, 80, 0.8);
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
